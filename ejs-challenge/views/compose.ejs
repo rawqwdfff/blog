@@ -1,0 +1,17 @@
+<%- include('partials/header'); -%>
+<h1>Compose</h1>
+
+<form action="/" method="post">
+  <div class="mb-3" >
+    <label for="exampleInputEmail1" class="form-label">Title</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="newBlogTitle">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <textarea class="form-control" name="newBlogPost" rows="5" cols="60" size="100%"></textarea>
+  </div>
+  <br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<%- include('partials/footer'); -%>
